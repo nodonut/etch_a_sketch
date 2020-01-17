@@ -23,3 +23,12 @@ createGrid.addEventListener('click', () => {
   const gridNumber = document.getElementById('grid-number').value;
   gridBlock(gridNumber);
 });
+
+const clear = document.querySelector('.btn-clear');
+
+clear.addEventListener('click', () => {
+  const gridBox = document.querySelector('.grid-box');
+  gridBox.innerHTML = '';
+  const input = document.querySelector('#grid-number');
+  input.value = '';
+});
